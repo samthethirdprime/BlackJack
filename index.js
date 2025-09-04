@@ -32,13 +32,16 @@ console.log(nameEl)
 //let playerChips = 145
 
 let player = {
-    name: prompt ("What's your name?"),
+    name: prompt ("What's your name?")
+    ,
     chips: prompt ("How many chips would you like?"),
+    
     //sayHello: function () { // this is called a method where we use a function inside an object player is object sayHello below is the method.METHODS ARE FUNCTIONS ATTATCHED TO OBJECTS
        // console.log("Hello world!")
     //}
 }
 //player.sayHello()
+
 
 
 nameEl.textContent = player.name + " $" + player.chips
