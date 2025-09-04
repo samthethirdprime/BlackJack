@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(images/blackjack.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+h1{
+    color: goldenrod;
+}
+.black{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    gap: 20px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    min-width: 500px;
+    text-align: center;
+    font-weight: bold;
+}
+#message-el {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: honeydew;
+    font-style: italic;
+}
+#sum-el {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: honeydew;
+}
+#cards-el {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+    color: honeydew;
+}
+button {
+    background: goldenrod;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: none;
+    text-align: center;
+    color: #016F32;
+    width: 150px;
+    font-weight: bold;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* === MOBILE (up to 600px) === */
+@media (max-width: 600px) {
+    body {
+        background-size: cover;
+        padding: 10px;
+    }
+
+    .black {
+        min-width: unset; /* remove fixed width */
+        width: 90%;       /* take most of the screen */
+        padding: 15px 20px;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    #message-el,
+    #sum-el,
+    #cards-el {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+/* === TABLET (601px to 900px) === */
+@media (min-width: 601px) and (max-width: 900px) {
+    .black {
+        min-width: unset;
+        width: 70%;
+        padding: 20px 30px;
+        gap: 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+}
+
+/* === DESKTOP (901px and up) === */
+@media (min-width: 901px) {
+    .black {
+        min-width: 500px; /* keep your original desktop look */
+    }
+}
